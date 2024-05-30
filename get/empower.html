@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empower</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border:black solid;
+        }
+        .navbar{
+            height: 80px;
+            width: 100%;
+            display: flex;
+            background-color:white;
+            align-items: center;
+            
+            
+        }
+        .nav ul{
+        list-style-type: none;
+        margin-left: 150px;
+        }
+        ul li{
+            display: inline;
+            margin-left: 50px;
+        }
+        .nav a{
+            text-decoration: none;
+            color: rgb(41, 40, 40);
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .nav a:hover{
+          color: rgb(88, 86, 86);
+        }
+        .logo{
+            display: flex;
+            margin-left: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .get{
+            margin-left: 200px;
+            border: white solid;
+            border-radius: 10px;
+            padding: 10px 30px;
+            background-color: rgb(241, 35, 241);
+        }
+        .get a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         .get:hover{
+            background-color: rgb(224, 157, 224);
+         }
+         .main{
+            height: 575px;
+            width: 100%;
+            background-image: url(./home.1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+
+            
+        
+         }
+         .main h1{
+            padding-top: 200px;
+            padding-left: 30px;
+            color: white;
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+          .main p{
+            border-radius: 5px;
+            width: 130px;
+            background-color:rgb(241, 35, 241);
+            margin-left: 30px;
+            padding: 15px 30px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          .main p:hover{
+            background-color:rgb(224, 157, 224);
+          }
+          .build{
+            height: 300px;
+            width: 100%;
+            margin-top: 50px;
+        
+         }
+          .build p{
+            font-size: 20px;
+            font-family: sans-serif;
+          }
+          .buildA{
+            display: flex;
+            padding-top: 50px;
+          }
+          .build1, .build2, .build3{
+            height: 100px;
+            width: 200px;
+             border-left: rgb(233, 230, 230) solid;
+            padding: 20px;
+          }
+          .project{
+            width: 100%;
+            background-color: rgb(225, 243, 243);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 100px;
+            margin-top: 50px;
+          }
+          .project h1{
+            margin-left: 118px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            
+          }
+          .project img{
+            border-radius: 10px;
+          }
+          .projectB{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 50px;
+            row-gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+          .project1, .project2, .project3, .project4{
+            height: 700px;
+            width: 550px;
+            border:white dashed;
+            border-radius: 10px;
+          }
+          .project h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          .project p{
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif;
+          color: rgb(78, 75, 75);
+        }
+        .project a{
+           text-decoration: none;
+           color:black;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        padding-left: 20px;
+        }
+        .project a:hover{
+          text-decoration: underline;
+        }
+        .text{
+            height: 700px;
+            width: 100%;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            font-size:30px;
+            text-align: center;
+            align-content: center;
+
+        }
+        .touch{
+          height: 500px;
+          width: 100%;
+        }
+        form{
+       margin-left: 300px;
+        }
+        form p{
+          height: 40px;
+          width: 250px;
+          align-content: center;
+          text-align: center;
+          margin-left: 200px;
+          font-size: 20px;
+          color: white;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          background-color: rgb(228, 68, 228);
+          border-radius: 15px;
+        }
+        form p:hover{
+          background-color: rgb(241, 152, 241);
+        }
+        
+        
+        input[type]{
+            height: 30px;
+            width: 700px;
+            margin-top: 20px;
+            color: rgb(163, 163, 163);
+            border:white solid;
+            border-bottom: rgb(194, 191, 191) solid;
+            font-size: 20px;
+             }
+             .border{
+              border: rgb(243, 204, 204) solid;
+              border-radius: 20px;
+              margin-top: 50px;
+             }
+         .footer{
+          height: 250px;
+          width: 100%;
+          padding-top: 50px;
+        
+          display: flex;
+          column-gap: 250px;
+         }
+         .footer2{
+          display: flex;
+      
+          
+        
+         }
+         .footer p{
+          font-size: 20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         .f2{
+          padding-left: 30px;
+         }
+         
+         .f2,.f3 ,.f4{
+          display: flex;
+          flex-direction: column;
+          
+        }
+         .footer a{
+          color:black;
+          text-decoration: none;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding-top: 25px;
+          
+        }
+        .icons{
+        
+          display: flex;
+          column-gap: 30px;
+          margin-top: 30px;
+          border-radius: 40px;
+          padding-bottom: 25px;
+        }
+        .copyright{
+          padding: 10px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+            <img src="./logo3-removebg-preview.png" height="50px" width="30px">
+            <h1>Empower</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">OUR MISSION</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">GET INVOVLVED</a></li>
+                </ul>
+            </div>
+            <div class="get">
+                <a href="#">DONATE</a>
+            </div>
+        </div>
+        <div class="main">
+           <h1>"The Power Of <br>
+            Giving Can change<br>
+            Lives"</h1><br><br>
+            <p>DISCOVER MORE</p>
+        </div>
+           <div class="build">
+            <h1>OUR VISION</h1>
+            <div class="buildA">
+            <div class="build1">
+                <img src="./careabout.png" height="90px" width="80px">
+                <br><br>
+                <p>Care About</p>
+
+            </div>
+            <div class="build2">
+                <img src="./donation1.png" height="90px" width="100px"><br><br>
+                 <p>Food Help</p>
+            </div>
+            <div class="build3">
+                <img src="./medicine.jpg" height="90px" width="100px"><br><br>
+                <p>Medicine Delivery</p>
+            </div>
+            <div class="build4">
+            <h1 style="font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Building A Better World</h1><br><br>
+            <p>Society and governments aren't set up to protect everyone who <br>
+                needs it. That's why charities are here to fill the gaps and <br>
+                provide dedicated resources to help the most vulnerable. For <br>
+                children, they rely on their parents or carers to give them safety,<br>
+                 guidance, and access to life's necessities.</p>
+
+            </div>
+            </div>
+           </div>
+           <div class="project">
+            <h1>Love Projects</h1>
+           <div class="projectB">
+            <div class="project1">
+            <img src="./craft.jpg" height="400px" width="550px"><br><br>
+            <h2>Tales of Love and Giving</h2><br><br>
+            <p>We believe in the power of unity, that together, we can make an extraordinary impact. With unwavering commitment, we strive to uplift those in need, to lend a helping hand, and to ignite hope in the hearts of individuals and communities alike. Our organization stands firmly rooted in the belief that every life holds immeasurable value and deserves equal opportunities to thrive<br>.</p>
+        <a href="#">VIEW MORE</a>
+        </div>
+            <div class="project2">
+            <img src="./heplinghands.png" height="400px" width="550px"><br><br>
+            <h2>Small Acts, Big Differences</h2><br><br>
+            <p>We believe in the power of unity, that together, we can make an extraordinary impact. With unwavering commitment, we strive to uplift those in need, to lend a helping hand, and to ignite hope in the hearts of individuals and communities alike. Our organization stands firmly rooted in the belief that every life holds immeasurable value and deserves equal opportunities to thrive<br>.</p>
+            
+            <a href="#">VIEW MORE</a>
+        </div>
+            <div class="project3">
+            <img src="./charity.jpg" height="400px" width="550px"><br><br>
+            <h2>Lives Through Generosity</h2><br><br>
+            <p>We believe in the power of unity, that together, we can make an extraordinary impact. With unwavering commitment, we strive to uplift those in need, to lend a helping hand, and to ignite hope in the hearts of individuals and communities alike. Our organization stands firmly rooted in the belief that every life holds immeasurable value and deserves equal opportunities to thrive<br>.</p>
+           
+            <a href="#">VIEW MORE</a>
+        </div>
+        
+            <div class="project4">
+            <img  src="./bekind.jpg" height="400px" width="550px"><br><br>
+            <h2>Inspiring Acts of Kindness</h2><br><br>
+            <p>We believe in the power of unity, that together, we can make an extraordinary impact. With unwavering commitment, we strive to uplift those in need, to lend a helping hand, and to ignite hope in the hearts of individuals and communities alike. Our organization stands firmly rooted in the belief that every life holds immeasurable value and deserves equal opportunities to thrive<br>.</p>
+            
+            <a href="#">VIEW MORE</a>
+        </div>
+           </div>
+           </div>
+           <div class="text">
+            <h1>"The simplest acts of kindness are<br>
+                 by far more powerful than a <br>
+                 thousand heads bowing in prayer."</h1>
+           </div>
+           <img src="./donation.jpg" height="650px" width="100%">
+
+           <div claas="touch" style="padding-top: 50px;">
+            <h1 style="text-align: center;">Get in Touch. </h1><br>
+            <form>
+                <label for="name"></label>
+                <input type="text" name="name" id="your name" placeholder="Your Name"><br><br><br>
+                
+                <label for="email"></label>
+                <input type="text" name="email" id="your email" placeholder="Your Email"><br><br><br>
+                <br>
+                 <textarea placeholder="Enter a message" ></textarea>
+                 <br><br>
+                 <p>SUBMIT</p>
+            </form>
+           </div>
+           <div class="border">
+           <div class="footer">
+              <div class="f2">
+                <div class="footer2">
+                <img src="./logo3-removebg-preview.png" height="50px" width="25px">
+                <h1>Empower</h1>
+               </div>
+               <a href="#">hello@empower.com</a><br>
+               <p>654-708-2554</p>
+            
+            <div class="icons">
+              <img src="./social.png" height="30px" width="30px">
+              <img src="./instagram.png" height="30px" width="30px">
+                <img src="./facebook-app-logo.png" height="30px" width="30px">
+            </div>
+</div>
+            
+            <div class="f3">
+              <p>HOME</p>
+              <a href="#">Projects</a>
+              <a href="#">Team</a>
+              <a href="#">Our Mission</a>
+              <a href="#">get Involved</a>
+           </div>
+           <div class="f4">
+            <p>PRODUCT LINK</p>
+            <a href="#">Style Guide</a>
+            <a href="#">Licencing</a>
+            <a href="#">Changelog</a>
+            <a href="#">Instructions</a>
+           </div>
+          </div>
+          <div class="copyright">
+            <p>@ This is a parid Andoni template powered by WebFlow</p>
+          </div> 
+           </div>
+    </div>
+    
+    
+</body>
+</html>
